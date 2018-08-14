@@ -1,0 +1,797 @@
+*{
+    margin:0;
+    padding: 0;
+    font-weight: 200;
+}
+html,body{
+    width : 100%;
+    height :auto;
+    color:#fff;
+    user-select: none;
+    overflow-x: hidden;
+}
+body{
+    background:#060c19;
+    font-family: "Sharp Sans Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    padding-bottom: 160px;
+    z-index: 2;
+}
+.box{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+/* 通用样式 */
+.cl:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.w-1300{
+    width:1300px;
+    margin:0 auto;
+}
+.f56{
+    font-size: 56px;
+}
+.f16{
+    font-size: 16px;
+}
+.f22{
+    font-size: 22px;
+}
+.color-fca{
+    color:#fcab28;
+}
+.bg-001c58{
+    background: #001c58;
+}
+.bg-080f32{
+    background: #080f32;
+}
+.m-b-5{
+    margin-bottom: 5px;
+}
+.m-t-60{
+    margin-top: 60px;
+}
+.m-b-30{
+    margin-bottom: 30px;
+}
+.m-r-56{
+    margin-right: 56px;
+}
+.p-30{
+    padding: 30px;
+    box-sizing: border-box;
+}
+.fl{
+    float: left;
+}
+.dis-flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+.dis-flex-center{
+    display: flex;
+    align-items: center;
+}
+/* 头部 */
+header{
+    width:100%;
+    padding-top: 40px;
+    position: fixed;
+    top:0;
+    z-index: 999;
+}
+.headerBefore{
+    padding-top: 40px;
+    background: none;
+    animation: headerBefore 1s;
+}
+@keyframes headerBefore
+{
+    from {padding-top: 0;background: rgba(0, 0, 0, 0.5);}
+    to {padding-top: 40px;background: none}
+}
+.headerAfter{
+    padding-top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    animation: headerAfter 0.6s;
+}
+@keyframes headerAfter{
+    from {padding-top:  40px;background: none;}
+    to {padding-top: 0;background: rgba(0, 0, 0, 0.5)}
+}
+.header{
+    height : 80px;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    width:100px;
+    height : 100%;
+    float: left;
+    margin-right: 40px;
+}
+.header .logo img{
+    max-width: 100%;
+    display: inline-block;
+    width:64px;
+    height:70px;
+}
+.nav li{
+    float:left;
+    margin-right: 40px;
+}
+.nav li a{
+    display: block;
+    color:#fff;
+    font-size: 18px;
+    line-height: 80px;
+    text-align: center;
+    font-family: "Sharp Sans Bold", Helvetica, Arial, sans-serif;
+}
+.nav li a:hover{
+    color:#fcab28;
+}
+.navBtn{
+    display: none;
+}
+/* 中间 */
+.content{
+    padding-top: 40px;
+}
+.content h4 {
+    font-size: 28px;
+}
+/* banner部分 */
+.banner{
+    padding-top: 154px;
+    height:730px;
+    box-sizing: border-box;
+    position: relative;
+}
+.banner .text{
+    z-index: 10;
+}
+.banner .text img{
+    padding: 60px 0 0 130px;
+    display: block;
+}
+.banner .text h5{
+    margin:0 0 36px 140px;
+    letter-spacing:8px;
+    font-weight:500;
+}
+.banner .text h5.small{
+    font-size:46px;
+    font-weight:500;
+}
+.banner .text p{
+    width:614px;
+    margin-left:20px;
+    padding-top: 50px;
+    color:#8c8c8c;
+}
+.banner .icon{
+    position: absolute;
+    bottom: 20px;
+    left:340px;
+    z-index: 1;
+}
+/* mission */
+#mission{
+    height:330px;
+    display: flex;
+    align-items: center;
+    background: url("../img/aibg.png") no-repeat;
+    background-size: 100% 100%;
+}
+#mission .text{
+    margin-left: 120px;
+    width:1050px;
+    height:100%;
+    box-sizing: border-box;
+    padding-top: 56px;
+}
+#mission .text .details{
+    display: inline-block;
+    width:auto;
+    float: left;
+    padding: 10px;
+    margin-top: 28px;
+    position: relative;
+    box-sizing: border-box;
+}
+#mission .text .details span{
+    display: inline-block;
+    width:16px;
+    height:16px;
+}
+#mission .text .details .up-left{
+    position: absolute;
+    left:0;
+    top:0;
+    border-top:2px solid #00ffff;
+    border-left:2px solid #00ffff;
+}
+#mission .icon img{
+    max-width: 100%;
+}
+#mission .text .details .low-right{
+    position: absolute;
+    right:0;
+    bottom:0;
+    border-right:2px solid #00ffff;
+    border-bottom:2px solid #00ffff;
+}
+/* problem */
+#problem{
+    padding: 46px 100px;
+    background: url("../img/problemBg.png") no-repeat;
+    background-size:100% 100%;
+ }
+ #problem ul li {
+     display: flex;
+     align-items: flex-start;
+     padding: 20px 0;
+     font-size: 20px;
+     line-height: 30px;
+ }
+#problem ul li img{
+    display: block;
+    width:60px;
+    height:60px;
+}
+#problem ul li h5{
+     font-size: 24px;
+     margin-bottom: 10px;
+     color:#fcab28;
+ }
+ #problem ul li div:nth-child(1){
+     margin-right: 48px;
+     padding-top: 5px;
+ }
+ /* solution */
+#solution{
+    padding: 48px 104px;
+}
+#solution h5{
+    font-size: 28px;
+}
+#solution p {
+    margin:20px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+#solution .hintIcon{
+    height:570px;
+}
+#solution .introIcon{
+    height:410px;
+}
+#solution img{
+    max-width: 100%;
+}
+#solution .hintIcon img, #solution .introIcon img{
+    display: block;
+    height:100%;
+    margin:0 auto;
+}
+#solution .sol-item{
+    display: flex;
+    align-items: flex-start;
+}
+#solution .sol-item .text{
+    width:980px;
+}
+#solution .sol-item .icon{
+    margin-right: 40px;
+}
+#solution .sol-item .icon img{
+    display: block;
+    width:68px;
+    height:68px;
+}
+/* Advisory team*/
+.member{
+    padding: 48px 104px;
+}
+.member ul{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -moz-box;
+    display: flex;
+}
+.member ul li{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex:1;
+    -moz-box-flex: 1;
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+}
+.member ul li img{
+    display: block;
+    width:200px;
+    height:200px;
+    max-width: 100%;
+    margin:46px 0;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.member ul li h6{
+    font-size: 28px;
+    color:#fcab28;
+}
+.member ul li p {
+    height:auto;
+    /*overflow: hidden;*/
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    /*cursor: pointer;*/
+}
+.member ul li .allIntro{
+    display: none;
+    font-size: 18px;
+    line-height: 32px;
+    background: rgb(0,74,137);
+    padding: 30px 20px;
+    width:340px;
+    box-sizing: border-box;
+    position: absolute;
+    top:300px;
+    left:-85px;
+    box-shadow: inset -1px 1px 3px 2px rgb(0,74,137), inset 1px -1px 3px 2px rgb(0,74,137), 0 0 20px 0 rgba(105, 89, 255,0.5);
+    border-radius: 6px;
+    z-index: 998;
+}
+/* documents */
+#documents{
+    padding: 48px 104px;
+}
+#documents .icon{
+    width:224px;
+    height:180px;
+    margin: 40px 128px 0 0;
+}
+#documents .icon img{
+    max-width: 100%;
+}
+#documents h6{
+    font-size: 24px;
+    margin-bottom: 64px;
+}
+#documents .text img{
+    display: inline-block;
+    width:48px;
+    height:48px;
+    max-width: 100%;
+    margin-right: 38px;
+}
+#documents .text a {
+    font-size: 24px;
+    color:#fcab28;
+}
+/* community */
+#community{
+    padding: 48px 104px;
+}
+#community p {
+    font-size: 20px;
+    text-align: center;
+    margin:20px 0 0 0;
+}
+#community .validate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #community .email{
+    display: inline-block;
+    margin-right:40px;
+    outline:none;
+    width:210px;
+    height:36px;
+    font-size: 16px;
+    background: none;
+    border:1px solid #7b7f92;
+    border-radius: 4px;
+    color:#7b7f92;
+    padding-left: 30px;
+}
+#community .button{
+    outline:none;
+    border:none;
+    display: inline-block;
+    width:210px;
+    height:40px;
+    margin:36px 0;
+    font-size: 18px;
+    color:#fff;
+    background: #fbac03;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+#community .follow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#community .follow span{
+    font-size: 20px;
+    margin-right: 10px;
+}
+#community .follow ul{
+    width:180px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#community .follow img{
+    display: block;
+    width:22px;
+    height:22px;
+    max-width: 100%;
+}
+/* 尾部 */
+.footer{
+    position: absolute;
+    bottom:100px;
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+}
+/*@media screen and (max-width: 1300px) {*/
+    /*.w-1300{*/
+        /*width:100%;*/
+    /*}*/
+    /*.box{*/
+        /*height:100%;*/
+        /*top:100px;*/
+    /*}*/
+    /*.f46{*/
+        /*font-size: 36px;*/
+    /*}*/
+    /*.banner .icon{*/
+        /*left:24%;*/
+        /*top:12%;*/
+        /*width:70%;*/
+    /*}*/
+    /*.banner .icon img{*/
+        /*width:70%;*/
+    /*}*/
+/*}*/
+@media screen and (max-width: 800px) {
+    .w-1300{
+        width:100%;
+    }
+    .box{
+        width:15rem;
+        height:7.4rem;
+        top:4rem;
+    }
+    .f56{
+        font-size: 0.6rem;
+        letter-spacing: 2px!important;
+    }
+    .f22{
+        font-size: 0.4rem;
+    }
+    .m-t-60{
+        margin-top: 1rem;
+    }
+    header{
+        padding-top: 0;
+    }
+    .logo{
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 998;
+    }
+    .nav{
+        display: none;
+        background: rgba(0, 0, 0, 0.9);
+        padding-top: 0.8rem;
+    }
+    .nav li{
+        float: none;
+        margin-right: 0;
+    }
+    .nav li a{
+        text-align: center;
+        height: 36px;
+        line-height: 36px;
+        border-bottom: 1px #444444 solid;
+        font-weight: 500;
+    }
+    .navBtn{
+        display: block;
+        width:30px;
+        height:30px;
+        background: url(../img/menu_icon.png) no-repeat;
+        background-size:100% ;
+        position: fixed;
+        top:40px;
+        right:20px;
+        z-index: 998;
+    }
+    .banner{
+        height:10rem;
+    }
+    .banner .text img{
+        padding: 0;
+        margin-left: 1rem;
+        display: block;
+        width: 75%;
+        max-width: 100%;
+    }
+    .banner .icon{
+        width:9rem;
+        height:7rem;
+        left:3.2rem;
+        top:2rem;
+    }
+    .banner .icon img{
+        width:9rem;
+    }
+    .banner .text p {
+        padding-top: 0;
+        margin-left: 1rem;
+    }
+    #mission .text{
+        margin-left: 1rem;
+        padding-top: 0.4rem;
+        width:15rem;
+    }
+    #mission .text .details{
+        width: 100%;
+        margin-top: 0.2rem;
+    }
+    #problem,#solution,#advisory,#team,#documents,#community{
+        padding: 0.5rem 1rem ;
+    }
+    #solution .introIcon {
+        height: 6rem;
+    }
+    #solution .dis-flex-start .icon{
+        width:5rem;
+        margin-right: 0.4rem;
+    }
+    .member ul{
+        display: block;
+    }
+    .member ul li{
+        width:50%;
+        float: left;
+        padding:0 0.3rem;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .member ul li .allIntro{
+        display: none;
+    }
+    #community p {
+        font-size: 0.4rem;
+        text-align: center;
+        margin: 0.4rem 0;
+    }
+    #community .btn{
+        font-size: 0.4rem;
+    }
+    #community .follow{
+        justify-content: center;
+    }
+    .footer{
+        font-size: 0.6rem;
+        bottom: 0.6rem;
+    }
+}
+@media screen and (max-width: 800px)  and (min-width:440px){
+    #advisory{
+        height:24rem;
+    }
+    .member ul li{
+        height:11.2rem;
+    }
+    .member ul li p{
+        margin-top: 0.1rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    .container{
+        padding-bottom: 2rem;
+    }
+    .f56{
+        font-size: 0.8rem;
+    }
+    .f16{
+        font-size: 0.4rem;
+    }
+    .f22{
+        font-size: 0.5rem;
+        line-height:1rem;
+    }
+    .m-b-30{
+        margin-bottom: 0.4rem;
+    }
+    .header .logo{
+        width:1.3rem;
+        height:1.6rem;
+        margin-left: 0.3rem;
+        margin-top: 0.4rem;
+    }
+    .header .logo img{
+        width:1.3rem;
+        height:1.6rem;
+    }
+    .navBtn{
+        top:0.6rem;
+    }
+    .content h4{
+        font-size: 0.8rem;
+    }
+    .banner{
+        padding-top: 2rem;
+    }
+    .banner .text h5{
+        margin:0 0 0.6rem 2rem;
+    }
+    .banner .text h5.small{
+        font-size:0.6rem;
+    }
+    .banner .text p {
+        width:100%;
+        padding-right: 2rem;
+        margin-left: 0.6rem;
+        box-sizing: border-box;
+    }
+    #mission{
+        height:auto;
+        padding: 0.6rem;
+    }
+    #mission h4{
+        margin-bottom: 0.6rem;
+    }
+    #mission .text{
+        margin: 0;
+        padding-top: 0.4rem;
+        width:26rem;
+    }
+    #mission .icon{
+        display: none;
+    }
+    #mission .text .details{
+        padding-right: 2px;
+    }
+    #problem,#solution,#advisory,#team,#documents,#community{
+        padding: 0.4rem 0.6rem ;
+    }
+    #problem ul li{
+        padding: 0.3rem 0;
+    }
+    #problem li img{
+        width:1.6rem;
+        height:1.6rem;
+    }
+    #problem ul li div:nth-child(1) {
+        margin-right: 0.6rem;
+    }
+    #problem ul li h5 {
+        font-size: 0.7rem;
+    }
+    #problem ul li p {
+        font-size: 0.4rem;
+        line-height: 1rem;
+    }
+    #solution .sol-item{
+        margin:1rem 0;
+    }
+    #solution .sol-item .text{
+        width:10rem;
+    }
+    #solution .sol-item .icon{
+        margin-right: 0.6rem;
+    }
+    #solution p {
+        margin:0.4rem 0;
+        font-size: 0.4rem;
+        line-height: 0.8rem;
+    }
+    #solution .hintIcon{
+        height:11rem;
+        padding: 0;
+    }
+    #solution h5{
+        font-size: 0.6rem;
+    }
+    #solution .dis-flex-start .icon{
+        width:4rem;
+    }
+    #solution .introIcon {
+        height: 6rem;
+        padding: 0;
+    }
+    .member ul{
+        display: block;
+    }
+    .member ul li{
+        width:100%;
+        padding:0 0.6rem;
+        margin:0;
+        box-sizing: border-box;
+    }
+    #advisory ul li img,#team ul li img{
+        display: block;
+        margin:0.6rem auto;
+    }
+    .member ul li h6 {
+        font-size: 0.6rem;
+    }
+    .member ul li p {
+        font-size: 0.4rem;
+        line-height: 0.8rem;
+        height: auto;
+    }
+    #documents .icon{
+        display: none;
+    }
+    #documents .text h6{
+        font-size: 0.6rem;
+        margin: 0.4rem 0 0.6rem 0;
+    }
+    #documents .text a{
+        font-size: 0.6rem;
+    }
+    #documents .text img{
+        width: 1rem;
+        height:1rem;
+        margin-right: 0.6rem;
+    }
+    #community p{
+        font-size: 0.5rem;
+        margin-bottom: 0.6rem;
+    }
+    #community .validate{
+        display: block;
+        text-align: center;
+        margin:0;
+    }
+    #community .email{
+        margin:0;
+    }
+
+    #community .follow span{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 340px) {
+    #mission{
+        height: 8rem;
+    }
+    #mission .text .details .up-left,#mission .text .details .low-right{
+        width:0.4rem;
+        height:0.4rem
+    }
+}

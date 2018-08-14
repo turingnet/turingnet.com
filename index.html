@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuringNet</title>
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        //http://www.turingnet.com/index.html?name=block3
+        $(() => {
+            let fontSize = $(window).width() / 750 * 50;
+            $("html").css("fontSize", fontSize + "px");
+        });
+        // $(window).resize(()=>{
+        //     location.reload();
+        // })
+    </script>
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header w-1300">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div class="nav">
+                    <nav>
+                        <ul class="cl">
+                            <li>
+                                <a href="#mission">Mission</a>
+                            </li>
+                            <li>
+                                <a href="#problem">Problem</a>
+                            </li>
+                            <li>
+                                <a href="#solution">Solution</a>
+                            </li>
+                            <li>
+                                <a href="#team">Team</a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/turingnet" target="_blank">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#community">Community</a>
+                            </li>
+                            <li>
+                                <a href="#documents">Documents</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navBtn"></div>
+            </div>
+        </header>
+        <main>
+            <div class="content w-1300">
+                <div class="banner">
+                    <div class="text">
+                        <h5 class="f56">TuringNet</h5>
+                        <h5 class="f56 small">A decentralized AI Platform</h5>
+                        <!-- <img src="./img/banner-text.png" alt=""> -->
+                    </div>
+                    <div class="icon">
+                        <img src="./img/bannerIcon.png" alt="">
+                    </div>
+                </div>
+
+                <div id="mission" name="Mission">
+                    <div class="text cl">
+                        <h4 class=f30>Mission</h4>
+                        <div class="details">
+                            <p class="f22 color-fca m-b-5">TuringNet is a  public chain that provides open and trustable platform for AI.</p>
+                            <p class="f22">The platform sets future development and applications of Artificial Intelligence free from any controls
+                                of centralized organizations, thus serving the best interests of the AI community that reshapes
+                                humanity. </p>
+                            <span class="up-left"></span>
+                            <span class="low-right"></span>
+                        </div>
+                    </div>
+                    <div class="icon p-30">
+                        <img src="./img/aiIcon.png" alt="">
+                    </div>
+                </div>
+
+                <div id="problem" name="Problem" class="m-t-60 bg-001c58">
+                    <h4>Problem</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./img/problem-icon1.png" alt="">
+                            </div>
+                            <div>
+                                <h5>Centralized model ownership</h5>
+                                <p>Today’s existing AI models are increasingly owned and controlled by tech giants who offer
+                                    cloud-based products and APIs. Such ownership could result in monoplication, unfair service
+                                    prices and limit participation of smaller companies to innovate the industry in the long
+                                    term. </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/problem-icon2.png" alt="">
+                            </div>
+                            <div>
+                                <h5>Wasted computational resources</h5>
+                                <p>Typical AI system requires massive computation powers for model training and inference. Multiple
+                                    centralized systems have built their own siloed data centers, which could lead to enormous
+                                    resource waste. There is a great opportunity to organize computational resources from
+                                    public in a decentralized but trustable way.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/problem-icon3.png" alt="">
+                            </div>
+                            <div>
+                                <h5>Lack of incentives to train AI models </h5>
+                                <p>Smaller companies and ordinary users are not incentivized participate in advancing AI industry
+                                    as there is no fair share of rewards and a high bar to entering such market. Tech giants
+                                    are not obligated to pay contributors who want to contribute their computation powers,
+                                    as they possess large data centers with much lower cost per unit power. The ecosystem
+                                    then separates the public from participating, and further strengthens centralized AI
+                                    systems and models.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/problem-icon4.png" alt="">
+                            </div>
+                            <div>
+                                <h5>Expensive operational cost </h5>
+                                <p>Centralized AI systems are operated separately by their owners. Even though the cost per
+                                    unit power is lower, the scales of the systems often lead to enormous cost to run.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/problem-icon5.png" alt="">
+                            </div>
+                            <div>
+                                <h5>Data storage and exfiltration </h5>
+                                <p>Training and optimizing AI models require large amount of data. The primary sources of such
+                                    training data are from user characteristics and interactions, or copied from enterprise
+                                    clients by providing cloud-based solutions. But there has been an increasing risks and
+                                    concerns of data sharing and exfiltration without authorization.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="solution" name="Solution" class="m-t-60 bg-080f32">
+                    <h4>Solution</h4>
+                    <p>TuringNet is creating world’s first blockchain network with consensus, incentives, extensibility, and
+                        virtual machine features dedicated for an open and trusted AI platform.
+                    </p>
+                    <div class="hintIcon p-30 m-b-30">
+                        <img src="./img/solution1.png" alt="solution">
+                    </div>
+                    <div class="sol-item">
+                        <div class="icon">
+                            <img src="./img/solution-icon1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>LBFT Consensus Tailored for AI</h5>
+                            <p>The LBFT(Learning Byzantine Fault Tolerance) consensus mechanism is the hallmark of TuringNet’s
+                                innovation. It was specifically designed for AI model training and empowers seamless integration
+                                between AI tasks on blockchain within every iteration of consensus. By voting the minimum
+                                loss value in each iteration, the consensus is able to select the best performing node and
+                                confirm it with token rewards.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="introIcon p-30 m-b-30">
+                        <img src="./img/solution2.png" alt="solution">
+                    </div>
+                    <div class="sol-item">
+                        <div class="icon">
+                            <img src="./img/solution-icon2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>Building Trust with Next Generation DModel and Multi-layer Chain</h5>
+                            <p>TuringNet’s decentralized models (DModels) are trained in an open environment and are 100% accessible
+                                and verifiable by the public. Its next generation multi-layered architecture is optimized
+                                for fast speed and large scale data sets for a wide variety of AI tasks, both in training
+                                and inference.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sol-item">
+                        <div class="icon">
+                            <img src="./img/solution-icon3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5 style="padding-top: 6px">TuringNet Token (TNET)</h5>
+                            <p>TNET Token is a sole crypto currency in TuringNet’s ecosystem, and a functional utility token
+                                in value exchange and transition network. The TNET Token will not be issued by TuringNet,
+                                but 100% distributed to miners who accomplish mining tasks on TuringNet’s platform operated
+                                by smart contract.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="team" name="Team" class="m-t-60 bg-080f32 member">
+                    <h4>Team</h4>
+                    <ul class="cl">
+                        <li>
+                            <img src="./img/hong.png" alt="">
+                            <h6>Kai Wen</h6>
+                            <p> Stanford Ph.D with expertise in Quantum Computing, Cryptography, Information Theory, and Optimization
+                                Algorithm. Hands-on experience at Google in AI and Machine Learning. Successful series entrepreneur
+                                that provides AI solutions to government sector and Fortune 500 companies.
+                            </p>
+                            <div class="allIntro">
+                                Stanford Ph.D with expertise in Quantum Computing, Cryptography, Information Theory, and Optimization Algorithm. Hands-on
+                                experience at Google in AI and Machine Learning. Successful series entrepreneur that provides
+                                AI solutions to government sector and Fortune 500 companies.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/kai.png" alt="">
+                            <h6>Jun Hong</h6>
+                            <p>Crypto entrepreneur and a former Senior Engineer at Google specializes in Machine Learning (filed
+                                multiple patents), Artificial Intelligence, Distributed Systems and GAN. Founder of Alphabet
+                                Blockchain Community and an ex-Chairman of the Open Source Software Association of Chinese
+                                Academy of Science.
+                            </p>
+                            <div class="allIntro">
+                                Crypto entrepreneur and a former Senior Engineer at Google specializes in Machine Learning (filed multiple patents), Artificial
+                                Intelligence, Distributed Systems and GAN. Founder of Alphabet Blockchain Community and an
+                                ex-Chairman of the Open Source Software Association of Chinese Academy of Science.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/dany.png" alt="">
+                            <h6>Dany Houde </h6>
+                            <p> Expertise in Distributed Systems and Encryption Algorithms. Former Senior Engineer at Amazon
+                                where he drastically improved robustness of Amazon’s EDI platform by implementing key security
+                                enhancements using encryption and secure communication and storage mechanisms.
+                            </p>
+                            <div class="allIntro">
+                                Expertise in Distributed Systems and Encryption Algorithms. Former Senior Engineer at Amazon where he drastically improved
+                                robustness of Amazon’s EDI platform by implementing key security enhancements using encryption
+                                and secure communication and storage mechanisms.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/bella.png" alt="">
+                            <h6>Bella Wang</h6>
+                            <p> Innovative business strategist and crypto enthusiast. Over 10 years of business background from
+                                Google and Tencent in the areas of operations, business development, technical partnership
+                                and talent management.
+                            </p>
+                            <div class="allIntro">
+                                Innovative business strategist and crypto enthusiast. Over 10 years of business background from Google and Tencent in the
+                                areas of operations, business development, technical partnership and talent management.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="advisory" name="Team" class="m-t-60 bg-001c58 member">
+                    <h4>Advisory Board</h4>
+                    <ul class="cl">
+                        <li>
+                            <img src="./img/Weigend.png" alt="">
+                            <h6>Andreas Weigend</h6>
+                            <p>Former Chief Scientist of Amazon.com and the author of the book Data for the People (2017). Teaches
+                                "Social Data Revolution" on applications of predictive analytics and the impact of big data
+                                on individuals, business and society at the UC Berkeley and Fudan University in Shanghai.
+                                Advisor to Alibaba, Goldman Sachs, World Economic Forum and various others. Stanford Ph.D.
+                            </p>
+                            <div class="allIntro">
+                                Former Chief Scientist of Amazon.com and the author of the book Data for the People (2017). Teaches "Social Data Revolution"
+                                on applications of predictive analytics and the impact of big data on individuals, business
+                                and society at the UC Berkeley and Fudan University in Shanghai. Advisor to Alibaba, Goldman
+                                Sachs, World Economic Forum and various others. Stanford Ph.D.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/Mr-Tim.png" alt="">
+                            <h6>Tim Brencht</h6>
+                            <p>Associate Professor in the Cheriton School of Computer Science at the University of Waterloo.
+                                A Research Scientist at multiple top tier institutions including Netflix, IBM’s Center for
+                                Advanced Studies, and HP Labs. Also an Associate Professor at York University and a Visiting
+                                Professor at EPFL.
+                            </p>
+                            <div class="allIntro">
+                                Associate Professor in the Cheriton School of Computer Science at the University of Waterloo. A Research Scientist at multiple
+                                top tier institutions including Netflix, IBM’s Center for Advanced Studies, and HP Labs.
+                                Also an Associate Professor at York University and a Visiting Professor at EPFL.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/person.png" alt="">
+                            <h6>Xie Tao </h6>
+                            <p>Professor and Willett Faculty Scholar in the Department of Computer Science at the University
+                                of Illinois at Urbana-Champaign. ACM Distinguished Scientist and an IEEE Fellow. Received
+                                multiple awards including NSF CAREER Award, Microsoft Research Outstanding Collaborators
+                                Award, Microsoft Research Software Engineering Innovation Foundation Award, Google Faculty
+                                Research Award, IBM Jazz Innovation Award, and IBM Faculty Awards.
+                            </p>
+                            <div class="allIntro">
+                                Professor and Willett Faculty Scholar in the Department of Computer Science at the University of Illinois at Urbana-Champaign.
+                                ACM Distinguished Scientist and an IEEE Fellow. Received multiple awards including NSF CAREER
+                                Award, Microsoft Research Outstanding Collaborators Award, Microsoft Research Software Engineering
+                                Innovation Foundation Award, Google Faculty Research Award, IBM Jazz Innovation Award, and
+                                IBM Faculty Awards.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/Mr-Wang.png" alt="">
+                            <h6>Leo Wang </h6>
+                            <p>Chief Token Architect of TuringNet. Over 17 years of field experience in high tech, and an active
+                                Angel Investor of 300+ successful investment since 2011. Manages a fund of 100 Million USD
+                                focusing on AI and Blockchain Technology. Early investor of NEO, QuarkChain and Dxchain.
+                            </p>
+                            <div class="allIntro">
+                                Chief Token Architect of TuringNet. Over 17 years of field experience in high tech, and an active Angel Investor of 300+
+                                successful investment since 2011. Manages a fund of 100 Million USD focusing on AI and Blockchain
+                                Technology. Early investor of NEO, QuarkChain and Dxchain.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                <div id="documents" name="Documents" class="m-t-60 bg-001c58">
+                    <h4>Documents</h4>
+                    <div class="dis-flex-center">
+                        <div class="icon">
+                            <img src="./img/document.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Download our whitepaper to learn more details</h6>
+                            <div class="dis-flex-center m-b-30">
+                                <img src="./img/docIcon2.png" alt="">
+                                <a href="/whitepaper.pdf">Whitepaper</a>
+                            </div>
+                            <div class="dis-flex-center">
+                                <img src="./img/docIcon2.png" alt="">
+                                <a href="/terms.pdf">Token Sale Terms and Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              -->
+
+                <div id="community" name="Community" class="m-t-60 bg-080f32">
+                    <h4>Community</h4>
+                    <p>Join our community today to receive news and updates </p>
+                    <!-- <div class="input">
+                        <input type="text" placeholder="Email(Required)" class="m-r-56">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <a href="javascript:;" class="btn">Receive Updates</a> -->
+                    <form action="https://turingnet.us19.list-manage.com/subscribe/post?u=b83bf3a2ba4e4acaab4e4005a&amp;id=10f644350c" method="post"
+                        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_b83bf3a2ba4e4acaab4e4005a_10f644350c" tabindex="-1" value="">
+                        </div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </form>
+                    <div class="follow">
+                        <span>Follow us on</span>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/turingnet/" target="_blank">
+                                    <img src="./img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/turingnet" target="_blank">
+                                    <img src="./img/plane.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Turing_Net" target="_blank">
+                                    <img src="./img/witte.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/turingnet" target="_blank">
+                                    <img src="./img/m.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.reddit.com/user/turing_net" target="_blank">
+                                    <img src="./img/robot.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/turingnet" target="_blank">
+                                    <img src="./img/git.png" alt="">
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer w-1300">Copyright © 2018 TuringNet.com</div>
+        </footer>
+    </div>
+    <div class="box">
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+
+</html>
