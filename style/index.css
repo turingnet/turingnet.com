@@ -141,7 +141,7 @@ header{
     display: block;
     color:#fff;
     font-size: 18px;
-    line-height: 80px;
+    line-height: 50px;
     text-align: center;
     font-family: "Sharp Sans Bold", Helvetica, Arial, sans-serif;
 }
@@ -149,7 +149,15 @@ header{
     color:#fcab28;
 }
 .navBtn{
-    display: none;
+    outline:none;
+    border:none;
+    display: inline-block;
+    width:180px;
+    height:50px;
+    color:#fff;
+    background: #55BDE9;
+    border-radius: 4px;
+    text-align: center;
 }
 /* 中间 */
 .content{
