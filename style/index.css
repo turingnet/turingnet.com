@@ -149,18 +149,6 @@ header{
     color:#fcab28;
 }
 .navBtn{
-  float:right;
-    outline:none;
-    border:none;
-    display: inline-block;
-    width:180px;
-    height:50px;
-    color:#fff;
-    background: #55BDE9;
-    border-radius: 4px;
-    text-align: center;
-}
-.navBtnNone {
     display: none;
 }
 /* 中间 */
