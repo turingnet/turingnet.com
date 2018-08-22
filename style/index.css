@@ -159,6 +159,9 @@ header{
     border-radius: 4px;
     text-align: center;
 }
+.navBtnNone {
+    display: none;
+}
 /* 中间 */
 .content{
     padding-top: 40px;
