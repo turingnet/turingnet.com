@@ -151,6 +151,18 @@ header{
 .navBtn{
     display: none;
 }
+
+.nav li a.social-btn{
+    line-height: 30px;
+    margin: 25px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+.nav li.right-btn{
+    float: right;
+}
 /* 中间 */
 .content{
     padding-top: 40px;
@@ -525,6 +537,14 @@ header{
         line-height: 36px;
         border-bottom: 1px #444444 solid;
         font-weight: 500;
+    }
+    .nav li.right-btn{
+        float: none;
+    }
+    .nav li a.social-btn{
+        border: none;
+        margin: 0;
+        border-radius: 0;
     }
     .navBtn{
         display: block;
