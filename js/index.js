@@ -5,6 +5,7 @@ $(() => {
             let _this = this;
             _this.anime();
             _this.navSide();
+            _this.clickEvent();
             let viewWidth = $("body").width();
             if (viewWidth > 900) {//如果是移动端，取消顶部导航动画
                 _this.scrollEvent();
@@ -156,9 +157,12 @@ $(() => {
             }
 
             animation();
+        },
+        clickEvent() {
+            $(".faq-title").on("click", function () {
+              $(this).siblings().toggle();
+            });
         }
     }
     main.init()
 })
-
-
