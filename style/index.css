@@ -465,6 +465,48 @@ header{
     height:22px;
     max-width: 100%;
 }
+
+/* faq */
+
+.page-title {
+  padding: 150px 80px 20px 80px;
+}
+
+.page-title h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.faq {
+    padding: 46px 100px;
+    background: #080f32;
+    background-size:100% 100%;
+ }
+
+ .faq h4 {
+    margin-bottom: 20px;
+ }
+ .faq ul li {
+     display: flex;
+     align-items: flex-start;
+     padding: 20px 0;
+     font-size: 20px;
+     line-height: 30px;
+ }
+.faq ul li img{
+    display: block;
+    width:60px;
+    height:60px;
+}
+.faq ul li h5{
+     font-size: 24px;
+     margin-bottom: 10px;
+     color:#fcab28;
+ }
+ .faq ul li div:nth-child(1){
+     margin-right: 48px;
+     padding-top: 5px;
+ }
+
 /* 尾部 */
 .footer{
     position: absolute;
@@ -814,4 +856,13 @@ header{
         width:0.4rem;
         height:0.4rem
     }
+}
+.strong {
+  font-weight: bold;
+}
+.faq-title {
+  cursor: pointer;
+}
+.faq-title~p {
+  display: none;
 }
