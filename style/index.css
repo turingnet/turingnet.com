@@ -126,6 +126,7 @@ header{
     height : 100%;
     float: left;
     margin-right: 40px;
+    font-size: 28px;
 }
 .header .logo img{
     max-width: 100%;
