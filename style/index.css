@@ -330,6 +330,7 @@ header{
     display: -moz-flex;
     display: -moz-box;
     display: flex;
+    flex-wrap: wrap;
 }
 .member ul li{
     -webkit-box-flex: 1;
@@ -338,6 +339,7 @@ header{
     -moz-box-flex: 1;
     flex: 1;
     margin-right: 20px;
+    min-width: 200px;
     position: relative;
 }
 .member ul li img{
